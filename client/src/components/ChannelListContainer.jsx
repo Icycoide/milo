@@ -25,7 +25,7 @@ const SideBar = ({ logout }) => (
 
 const CompanyHeader = () => (
     <div className="channel-list__header">
-        <p className="channel-list__header__text">Medical Pager</p>
+        <p className="channel-list__header__text">Milo</p>
     </div>
 )
 
@@ -44,10 +44,8 @@ const ChannelListContent = ({ isCreating, setIsCreating, setCreateType, setIsEdi
         cookies.remove("token");
         cookies.remove('userId');
         cookies.remove('username');
-        cookies.remove('fullName');
         cookies.remove('avatarURL');
         cookies.remove('hashedPassword');
-        cookies.remove('phoneNumber');
 
         window.location.reload();
     }
