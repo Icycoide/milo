@@ -7,11 +7,9 @@ import signinImage from '../assets/signup.jpg';
 const cookies = new Cookies();
 
 const initialState = {
-    fullName: '',
     username: '',
     password: '',
     confirmPassword: '',
-    phoneNumber: '',
     avatarURL: '',
 }
 
@@ -37,11 +35,9 @@ const Auth = () => {
 
         cookies.set('token', token);
         cookies.set('username', username);
-        cookies.set('fullName', fullName);
         cookies.set('userId', userId);
 
         if(isSignup) {
-            cookies.set('phoneNumber', phoneNumber);
             cookies.set('avatarURL', avatarURL);
             cookies.set('hashedPassword', hashedPassword);
         }
@@ -61,14 +57,6 @@ const Auth = () => {
                     <form onSubmit={handleSubmit}>
                         {isSignup && (
                             <div className="auth__form-container_fields-content_input">
-                                <label htmlFor="fullName">Full Name</label>
-                                <input 
-                                    name="fullName" 
-                                    type="text"
-                                    placeholder="Full Name"
-                                    onChange={handleChange}
-                                    required
-                                />
                             </div>
                         )}
                         <div className="auth__form-container_fields-content_input">
@@ -81,18 +69,6 @@ const Auth = () => {
                                     required
                                 />
                             </div>
-                        {isSignup && (
-                            <div className="auth__form-container_fields-content_input">
-                                <label htmlFor="phoneNumber">Phone Number</label>
-                                <input 
-                                    name="phoneNumber" 
-                                    type="text"
-                                    placeholder="Phone Number"
-                                    onChange={handleChange}
-                                    required
-                                />
-                            </div>
-                        )}
                         {isSignup && (
                             <div className="auth__form-container_fields-content_input">
                                 <label htmlFor="avatarURL">Avatar URL</label>
