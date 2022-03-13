@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #005fff;
-    --primary-color-alpha: #005fff1a;
+    --primary-color: #5f00db;
+    --primary-color-alpha: #5f00db1a;
   }
   
   html,
@@ -27,7 +27,7 @@
     justify-content: center;
   
     padding: 2rem;
-    background: #005fff;
+    background: #5f00db;
   }
   
   .auth__form-container_image {
@@ -56,7 +56,7 @@
   .auth__form-container_fields-content p {
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: #05245a;
+    color: #2c095a;
     font-weight: 900;
   }
   
@@ -101,8 +101,8 @@
   
   .auth__form-container_fields-content_input input:focus,
   .auth__form-container_fields-content_input input:active {
-    box-shadow: 0px 0px 0px 1.5px #005fff;
-    border-color: #005fff;
+    box-shadow: 0px 0px 0px 1.5px #5f00db;
+    border-color: #5f00db;
   }
   
   .auth__form-container_fields-content_input-password {
@@ -120,8 +120,8 @@
   
   .auth__form-container_fields-content_button button {
     border-radius: 4px;
-    background: #005fff;
-    border: 1px solid #005fff;
+    background: #5f00db;
+    border: 1px solid #5f00db;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -132,7 +132,7 @@
   }
   
   .auth__form-container_fields-content_button button:hover {
-    background: #0066ff;
+    background: #5f00db;
   }
   
   .auth__form-container_fields-account {
@@ -150,7 +150,7 @@
   }
   
   .auth__form-container_fields-account span {
-    color: #05245a;
+    color: #47118d;
     cursor: pointer;
     font-weight: 700;
   }
@@ -1712,7 +1712,7 @@
     display: none;
     height: 50px;
     width: 50px;
-    background: #005fff;
+    background: #5f00db;
     position: absolute;
     right: -2%;
     top: 50%;
@@ -1824,4 +1824,3 @@
       display: none;
     }
   }
-  
